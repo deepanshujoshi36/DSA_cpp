@@ -45,7 +45,7 @@ void insertAtTail(node *&head, int val)
     temp->next = n;
     n->prev = temp;
 }
-
+//c
 // to display the list
 void display(node *head)
 {

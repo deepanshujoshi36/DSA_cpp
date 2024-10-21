@@ -128,7 +128,7 @@ node *reverserecursive(node *&head)
     return newhead;
 }
 
-//to reverse the list at k nodes
+// to reverse the list at k nodes
 node *reversek(node *&head, int k)
 {
     node *prevptr = NULL;
@@ -219,5 +219,4 @@ int main()
     cout << detectCycle(head) << endl;
     makeCycle(head, 2);
     cout << detectCycle(head) << endl;
-    
 }
