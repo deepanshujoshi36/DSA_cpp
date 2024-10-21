@@ -1,5 +1,4 @@
 #include<iostream>
-#include<stack>
 using namespace std;
 
 class stack{
@@ -18,7 +17,7 @@ class stack{
     }
 
     void push(int element){
-        if(top-size > 1){
+        if(size-top > 1){
             top++;
             arr[top] = element; 
         }
@@ -45,9 +44,32 @@ class stack{
         }
     }
 
+    bool isempty(){
+        if(top == -1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 };
 
 int main(){
+    stack st(5);
+    st.push(2);
+    st.push(3);
+    st.push(4);
+    st.push(6);
+    cout<<st.peek()<<endl;
+    st.pop();
+    cout<<st.peek()<<endl;
+    if(st.isempty()){
+        cout<<"stack is empty mere dost"<<endl;
+    }
+    else{
+        cout<<"stack is not empty mere dost"<<endl;
+    }
     /*
 
     //creation of stack
