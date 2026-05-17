@@ -32,7 +32,7 @@ class stack{
         }
         else{
             cout<<"stack underflow"<<endl;
-        }
+        }       
     }
 
     int peek(){
@@ -41,16 +41,12 @@ class stack{
         }
         else{
             cout<<"Stack is empty"<<endl;
-        }
+        
+	}
     }
 
     bool isempty(){
-        if(top == -1){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return (top == -1);
     }
 
 };
